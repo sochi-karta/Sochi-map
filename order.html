@@ -7,3 +7,115 @@
   <h2>Уважаемые дамы и господа!</h2>
   <p>Вы можете получить карту непосредственно из рук автора проекта…</p>
 </div>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Заказ карты Сочи — оформление заявки</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #f2f5f9;
+            font-family: 'Montserrat', Arial, sans-serif;
+            color: #222;
+            margin: 0;
+        }
+        .container {
+            max-width: 520px;
+            margin: 48px auto 0 auto;
+            padding: 36px 24px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.11);
+        }
+        h1 {
+            margin-top: 0;
+            font-size: 1.7rem;
+            letter-spacing: 0.8px;
+            margin-bottom: 18px;
+        }
+        label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: 600;
+        }
+        input[type="text"], input[type="tel"], textarea {
+            width: 100%;
+            padding: 11px 10px;
+            margin-bottom: 16px;
+            border: 1.3px solid #cfd8de;
+            border-radius: 7px;
+            font-size: 1rem;
+            box-sizing: border-box;
+            background: #f9fafc;
+            transition: border 0.13s;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border: 1.3px solid #1976d2;
+            box-shadow: 0 1px 8px #e7ecf3;
+        }
+        .btn {
+            display: inline-block;
+            background: #1976d2;
+            color: #fff;
+            font-weight: bold;
+            padding: 13px 42px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.14rem;
+            margin-top: 5px;
+            cursor: pointer;
+            transition: background 0.15s;
+        }
+        .btn:hover {
+            background: #125ba5;
+        }
+        .form-tip {
+            color: #777;
+            font-size: 0.97em;
+            margin-top: -13px;
+            margin-bottom: 14px;
+        }
+        .after-text {
+            margin-top: 30px;
+            color: #194060;
+            background: #f5fafc;
+            border-radius: 8px;
+            padding: 13px 21px;
+            font-size: 1.12em;
+        }
+        @media (max-width: 700px) {
+            .container {padding: 12px;}
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Заказ карты Сочи</h1>
+    <form>
+        <label for="fio">ФИО *</label>
+        <input type="text" id="fio" name="fio" required placeholder="Например: Иванов Иван Иванович">
+        <div class="form-tip">Укажите полностью ФИО получателя.</div>
+
+        <label for="phone">Телефон *</label>
+        <input type="tel" id="phone" name="phone" required placeholder="+7 (900) 123-4567">
+        <div class="form-tip">Телефон для связи и подтверждения заказа.</div>
+
+        <label for="address">Почтовый адрес доставки *</label>
+        <textarea id="address" name="address" rows="2" required placeholder="Город, улица, дом, квартира (напр.: г. Сочи, ул. Морская, 10, кв. 5)"></textarea>
+        <div class="form-tip">Пожалуйста, укажите полный адрес для быстрой доставки.</div>
+
+        <button type="submit" class="btn">Заказать</button>
+    </form>
+    <div class="after-text">
+        После отправки заявки мы свяжемся с вами для подтверждения и уточнения деталей.<br><br>
+        <b>Важно:</b> Ваши данные не передаются третьим лицам. Оплата — после подтверждения заказа.<br>
+        <br>
+        Если вы находитесь в Сочи — карту можно получить лично из рук автора проекта.
+    </div>
+</div>
+</body>
+</html>
