@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sochi-karta.github.io/Sochi-map/sitemap.xml
+Host: sochi-karta.github.io/Sochi-map/
