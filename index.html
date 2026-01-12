@@ -1,75 +1,155 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Бумажные туристические карты Сочи и окрестностей: маршрутные тропы, Адлер, Ахун, Хоста, подробная карта центра города. Купить с доставкой по всей России.">
-  <meta name="keywords" content="карта Сочи, туристические карты, маршруты Сочи, карта Адлера, карта Ахуна">
-  <meta name="robots" content="index,follow">
-  <meta name="yandex-verification" content="cd1ff9ce0404f62c" />
-  <link rel="stylesheet" href="style.css">
-  <title>Карта Сочи — туристические карты купить онлайн</title>
+    <meta charset="UTF-8">
+    <title>Туристические карты Сочи — Купить онлайн</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #f2f5f9;
+            font-family: 'Montserrat', Arial, sans-serif;
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px 24px 24px 24px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+        }
+        nav {
+            margin-bottom: 29px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 25px;
+        }
+        nav a {
+            color: #1976d2;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color .2s;
+        }
+        nav a:hover {
+            color: #155fa0;
+            text-decoration: underline;
+        }
+        h1 {
+            margin-top: 0;
+            font-size: 2.3rem;
+            letter-spacing: 1px;
+        }
+        h2 {
+            color: #1976d2;
+            margin-top: 36px;
+        }
+        .product-img {
+            width: 280px;
+            max-width: 100%;
+            margin: 24px 0 10px 0;
+            border-radius: 7px;
+            box-shadow: 0 4px 14px rgba(44,109,180, 0.09);
+        }
+        .card {
+            background: #f8fafc;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(140,170,255,.07);
+            margin-bottom: 20px;
+        }
+        .buy-btn, .order-btn {
+            display: inline-block;
+            background: #1976d2;
+            color: #fff;
+            font-weight: bold;
+            padding: 15px 36px;
+            border: none;
+            border-radius: 7px;
+            font-size: 1.1rem;
+            transition: background 0.18s;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+        .buy-btn:hover, .order-btn:hover {
+            background: #0d4c92;
+        }
+        ul.tick-list {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 0;
+        }
+        ul.tick-list li::before {
+            content: "✔";
+            margin-right: 7px;
+            color: #3db44b;
+            font-weight: bold;
+        }
+        footer {
+            margin-top: 50px;
+            padding-top: 34px;
+            text-align: center;
+            color: #616161;
+            font-size: 0.95rem;
+        }
+        @media (max-width: 600px) {
+            .container {padding: 8px;}
+            nav ul {gap: 13px; font-size: .94rem;}
+            .card {padding: 10px;}
+        }
+    </style>
 </head>
 <body>
-  <header>
+<div class="container">
+    <nav>
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Карта Адлера</a></li>
+            <li><a href="#">Агурские водопады</a></li>
+            <li><a href="#">Орлиные скалы</a></li>
+            <li><a href="#">Гора Ахун</a></li>
+            <li><a href="#">Купить карту</a></li>
+        </ul>
+    </nav>
     <h1>Туристические карты Сочи</h1>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="ahun.html">Карта горы Ахун</a></li>
-      <li><a href="agurskie-vodopady.html">Карта Агурских водопадов</a></li>
-      <li><a href="orlinye-skaly.html">Карта Орлиные скалы</a></li>
-      <li><a href="adler.html">Карта Адлер</a></li>
-      <li><a href="order.html">Купить карту</a></li>
-    </ul>
-  </nav>
-  <main>
-    <section>
-      <h2>Купить бумажную карту Сочи</h2>
-      <figure>
-        <img src="2026-01-09_03-00-35.png" alt="Карта Сочи" width="300" loading="lazy">
-        <figcaption>Карта Сочи</figcaption>
-      </figure>
-      <figure>
-        <img src="2026-01-09_03-01-11.png" alt="Образец Карты Сочи" width="300" loading="lazy">
-        <figcaption>Образец карты Сочи</figcaption>
-      </figure>
-      <p>Уникальная бумажная карта Сочи с номерами домов, пляжами и тропами. Отлично складируется, пригодна для пеших и автомобильных маршрутов. Есть доставка по всей России!</p>
-      <a href="order.html?product=sochi-map" class="buy-btn" role="button">Заказать карту Сочи</a>
-    </section>
-    <section>
-      <h3>Другие карты</h3>
-      <ul>
-        <li>
-          ЦЕНТР СОЧИ — карта вычерчена и подготовлена к печати. Появление в продаже: апрель — май 2026 г.
-        </li>
-        <li>
-          <a href="ahuna.html">Карта маршрутов горы Ахун</a>
-          <p>На данном этапе идёт вычерчивание и подготовка к печати. Готовность продукта: август — сентябрь 2026 г.</p>
-        </li>
-        <li><a href="adler.html">Карта Адлера и побережья</a></li>
-      </ul>
-    </section>
-    <section>
-      <h4>Информация от создателя карт и сайта</h4>
-      <ul>
-        <li>Уважаемые дамы и господа!</li>
-        <li>
-          На моём сайте вы можете ознакомиться с продуктами карт города Сочи. Есть возможность купить карты:
-          <ul>
-            <li>центр Сочи;</li>
-            <li>Агурских водопадов;</li>
-            <li>г. Ахун;</li>
-            <li>Красная поляна — на «Озоне»;</li>
-            <li>непосредственно у автора работ.</li>
-          </ul>
-        </li>
-        <li>На данный момент идёт подготовка к печати карт и разработка сайта для гостей и туристов города Сочи.</li>
-        <li>Следите за обновлениями сайта!</li>
-      </ul>
-    </section>
-  </main>
+
+    <div class="card">
+        <h2>Купить бумажную карту Сочи</h2>
+        <img class="product-img" src="karta-sochi.jpg" alt="Карта Сочи">
+        <ul class="tick-list">
+            <li>Все улицы, номера домов, пляжи и тропы</li>
+            <li>Компактно складывается</li>
+            <li>Удобна для пеших и автомобильных маршрутов</li>
+            <li>Доставка по всей России</li>
+        </ul>
+        <a class="buy-btn" href="#">Заказать карту</a>
+    </div>
+
+    <div class="card">
+        <h2>Другие карты</h2>
+        <b>Центр Сочи</b> — появление в продаже: <b>апрель–май 2026 г.</b><br>
+        <b>Маршруты горы Ахун</b> — готовность: <b>август–сентябрь 2026 г.</b><br>
+        <a class="order-btn" href="#">Карта Адлера и побережья</a>
+    </div>
+
+    <div class="card">
+        <h2>Информация и контакты</h2>
+        <p>Уникальные бумажные карты, созданные специально для туристов и гостей города Сочи. Заказывайте напрямую у автора или через «Ozon».</p>
+        <p>По вопросам заказа/доставки пишите: <a href="mailto:sochi-map@yandex.com">sochi-map@yandex.com</a></p>
+        <p>Следите за обновлениями — сайт постоянно дорабатывается и пополняется новыми маршрутами!</p>
+    </div>
+</div>
+
+<footer>
+    © 2026 Туристические карты Сочи
+</footer>
+
  <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
     (function(m,e,t,r,i,k,a){
