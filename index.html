@@ -7,108 +7,145 @@
   <meta name="keywords" content="карта Сочи, туристические карты, маршруты Сочи, карта Адлера, карта Ахуна">
   <meta name="robots" content="index,follow">
   <link rel="shortcut icon" href="https://sochi-karta.github.io/Sochi-map/favicon.ico" type="image/x-icon">
-  <meta name="yandex-verification" content="f0b51ec8a4902cbe" />
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap" rel="stylesheet">
-    <style>
-        body {
-            background: #f2f5f9;
-            font-family: 'Montserrat', Arial, sans-serif;
-            color: #222;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 30px 24px 24px 24px;
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.10);
-        }
-        nav {
-            margin-bottom: 29px;
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            gap: 25px;
-        }
-        nav a {
-            color: #1976d2;
-            text-decoration: none;
-            font-weight: 600;
-            transition: color .2s;
-        }
-        nav a:hover {
-            color: #155fa0;
-            text-decoration: underline;
-        }
-        h1 {
-            margin-top: 0;
-            font-size: 2.3rem;
-            letter-spacing: 1px;
-        }
-        h2 {
-            color: #1976d2;
-            margin-top: 36px;
-        }
-        .product-img {
-            width: 280px;
-            max-width: 100%;
-            margin: 24px 0 10px 0;
-            border-radius: 7px;
-            box-shadow: 0 4px 14px rgba(44,109,180, 0.09);
-        }
-        .card {
-            background: #f8fafc;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 2px 8px rgba(140,170,255,.07);
-            margin-bottom: 20px;
-        }
-        .buy-btn, .order-btn {
-            display: inline-block;
-            background: #1976d2;
-            color: #fff;
-            font-weight: bold;
-            padding: 15px 36px;
-            border: none;
-            border-radius: 7px;
-            font-size: 1.1rem;
-            transition: background 0.18s;
-            text-decoration: none;
-            margin-top: 15px;
-        }
-        .buy-btn:hover, .order-btn:hover {
-            background: #0d4c92;
-        }
-        ul.tick-list {
-            list-style: none;
-            padding-left: 0;
-            margin-top: 0;
-        }
-        ul.tick-list li::before {
-            content: "✔";
-            margin-right: 7px;
-            color: #3db44b;
-            font-weight: bold;
-        }
-        footer {
-            margin-top: 50px;
-            padding-top: 34px;
-            text-align: center;
-            color: #616161;
-            font-size: 0.95rem;
-        }
-        @media (max-width: 600px) {
-            .container {padding: 8px;}
-            nav ul {gap: 13px; font-size: .94rem;}
-            .card {padding: 10px;}
-        }
-    </style>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;amp;display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #f2f5f9;
+      font-family: 'Montserrat', Arial, sans-serif;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px 24px 24px 24px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    }
+    nav {
+      margin-bottom: 29px;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 25px;
+    }
+    nav a {
+      color: #1976d2;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color .2s;
+    }
+    nav a:hover {
+      color: #155fa0;
+      text-decoration: underline;
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 2.3rem;
+      letter-spacing: 1px;
+    }
+    h2 {
+      color: #1976d2;
+      margin-top: 36px;
+    }
+    .product-img {
+      width: 280px;
+      max-width: 100%;
+      margin: 24px 0 10px 0;
+      border-radius: 7px;
+      box-shadow: 0 4px 14px rgba(44,109,180, 0.09);
+      cursor: zoom-in;
+      transition: box-shadow .2s;
+    }
+    .card {
+      background: #f8fafc;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(140,170,255,.07);
+      margin-bottom: 20px;
+    }
+    .buy-btn, .order-btn {
+      display: inline-block;
+      background: #1976d2;
+      color: #fff;
+      font-weight: bold;
+      padding: 15px 36px;
+      border: none;
+      border-radius: 7px;
+      font-size: 1.1rem;
+      transition: background 0.18s;
+      text-decoration: none;
+      margin-top: 15px;
+    }
+    .buy-btn:hover, .order-btn:hover {
+      background: #0d4c92;
+    }
+    ul.tick-list {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 0;
+    }
+    ul.tick-list li::before {
+      content: "✔";
+      margin-right: 7px;
+      color: #3db44b;
+      font-weight: bold;
+    }
+    footer {
+      margin-top: 50px;
+      padding-top: 34px;
+      text-align: center;
+      color: #616161;
+      font-size: 0.95rem;
+    }
+    /* LIGHTBOX для увеличенного просмотра */
+    .lightbox-bg {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      top:0; left:0; width:100vw; height:100vh;
+      background: rgba(0,0,0,0.81);
+      text-align: center;
+      overflow:auto;
+    }
+    .lightbox-bg:target { display: block; }
+    .lightbox-bg img {
+      max-width: 94vw;
+      max-height: 84vh;
+      margin: 40px auto 12px auto;
+      border-radius: 13px;
+      box-shadow: 0 8px 38px rgba(0,0,0,0.16);
+      background: #fff;
+      display: block;
+    }
+    .lightbox-bg .close-btn {
+      color: #fff;
+      font-size: 3rem;
+      text-decoration: none;
+      font-weight: bold;
+      position: absolute;
+      top: 24px;
+      right: 40px;
+      background:rgba(0,0,0,0.0);
+      border-radius: 4px;
+      transition: background .22s;
+    }
+    .lightbox-bg .close-btn:hover {
+      background:rgba(0,0,0,0.18);
+    }
+    @media (max-width: 600px) {
+      .container {padding: 8px;}
+      nav ul {gap: 13px; font-size: .94rem;}
+      .card {padding: 10px;}
+      .lightbox-bg img {max-width: 99vw; max-height: 74vh;}
+      .lightbox-bg .close-btn { font-size: 2.2rem; right: 17px; top:12px;}
+    }
+  </style>
 </head>
 <body>
 <div class="container">
@@ -125,7 +162,12 @@
 
     <div class="card">
         <h2>Купить бумажную карту Сочи</h2>
-        <img class="product-img" src="2026-01-09_03-01-11.png" alt="Карта Сочи">
+
+        <!-- Миниатюра с увеличением по клику -->
+        <a href="#map-large" title="Увеличить">
+          <img class="product-img" src="2026-01-09_03-01-11.png" alt="Карта Сочи">
+        </a>
+
         <ul class="tick-list">
             <li>Все улицы, номера домов, пляжи и тропы</li>
             <li>Компактно складывается</li>
@@ -156,22 +198,15 @@
     </div>
 </div>
 
+<!-- Лайтбокс-увеличение картинки по якорю -->
+<div id="map-large" class="lightbox-bg">
+    <a href="#" class="close-btn" title="Закрыть">&amp;times;</a>
+    <img src="2026-01-09_03-01-11.png" alt="Карта Сочи — крупно">
+</div>
+
 <footer>
     © 2026 Туристические карты Сочи
 </footer>
 
- <!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function(m,e,t,r,i,k,a){
-        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106185300', 'ym');
-
-    ym(106185300, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/106185300" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
 </body>
 </html>
