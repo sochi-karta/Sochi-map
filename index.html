@@ -1,251 +1,397 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Карта Сочи с улицами и домами подробно | Купить карту Сочи</title>
-  <meta name="description" content="Бумажные туристические карты Сочи и окрестностей: маршрутные тропы, Адлер, Ахун, Хоста, подробная карта центра города. Купить с доставкой по всей России.">
-  <meta name="keywords" content="карта Сочи, туристические карты, маршруты Сочи, карта Адлера, карта Ахуна">
-  <meta name="robots" content="index,follow
-  <link rel="canonical" href="https://sochi-karta.github.io/Sochi-map/">
-  <link rel="shortcut icon" href="https://sochi-karta.github.io/Sochi-map/favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;amp;display=swap" rel="stylesheet">
-  <style>
-    body {
-      background: #f2f5f9;
-      font-family: 'Montserrat', Arial, sans-serif;
-      color: #222;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 30px 24px 24px 24px;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.10);
-    }
-    nav {
-      margin-bottom: 29px;
-    }
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      gap: 25px;
-    }
-    nav a {
-      color: #1976d2;
-      text-decoration: none;
-      font-weight: 600;
-      transition: color .2s;
-    }
-    nav a:hover {
-      color: #155fa0;
-      text-decoration: underline;
-    }
-    h1 {
-      margin-top: 0;
-      font-size: 2.3rem;
-      letter-spacing: 1px;
-    }
-    h2 {
-      color: #1976d2;
-      margin-top: 36px;
-    }
-    .product-img {
-      width: 280px;
-      max-width: 100%;
-      margin: 24px 0 10px 0;
-      border-radius: 7px;
-      box-shadow: 0 4px 14px rgba(44,109,180, 0.09);
-      cursor: zoom-in;
-      transition: box-shadow .2s;
-    }
-    .card {
-      background: #f8fafc;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 2px 8px rgba(140,170,255,.07);
-      margin-bottom: 20px;
-    }
-    .buy-btn, .order-btn {
-      display: inline-block;
-      background: #1976d2;
-      color: #fff;
-      font-weight: bold;
-      padding: 15px 36px;
-      border: none;
-      border-radius: 7px;
-      font-size: 1.1rem;
-      transition: background 0.18s;
-      text-decoration: none;
-      margin-top: 15px;
-    }
-    .buy-btn:hover, .order-btn:hover {
-      background: #0d4c92;
-    }
-    ul.tick-list {
-      list-style: none;
-      padding-left: 0;
-      margin-top: 0;
-    }
-    ul.tick-list li::before {
-      content: "✔";
-      margin-right: 7px;
-      color: #3db44b;
-      font-weight: bold;
-    }
-    footer {
-      margin-top: 50px;
-      padding-top: 34px;
-      text-align: center;
-      color: #616161;
-      font-size: 0.95rem;
-    }
-    /* LIGHTBOX для увеличенного просмотра */
-    .lightbox-bg {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      top:0; left:0; width:100vw; height:100vh;
-      background: rgba(0,0,0,0.81);
-      text-align: center;
-      overflow:auto;
-    }
-    .lightbox-bg:target { display: block; }
-    .lightbox-bg img {
-      max-width: 94vw;
-      max-height: 84vh;
-      margin: 40px auto 12px auto;
-      border-radius: 13px;
-      box-shadow: 0 8px 38px rgba(0,0,0,0.16);
-      background: #fff;
-      display: block;
-    }
-    .lightbox-bg .close-btn {
-      color: #fff;
-      font-size: 3rem;
-      text-decoration: none;
-      font-weight: bold;
-      position: absolute;
-      top: 24px;
-      right: 40px;
-      background:rgba(0,0,0,0.0);
-      border-radius: 4px;
-      transition: background .22s;
-    }
-    .lightbox-bg .close-btn:hover {
-      background:rgba(0,0,0,0.18);
-    }
-    @media (max-width: 600px) {
-      .container {padding: 8px;}
-      nav ul {gap: 13px; font-size: .94rem;}
-      .card {padding: 10px;}
-      .lightbox-bg img {max-width: 99vw; max-height: 74vh;}
-      .lightbox-bg .close-btn { font-size: 2.2rem; right: 17px; top:12px;}
-    }
-  </style>
-</head>
-<body>
-<div class="container">
-    <nav>
-        <ul>
-            <li><a href="https://sochi-karta.github.io/Sochi-map/">Главная</a></li>
-            <li><a href="adler.html">Карта Адлера</a></li>
-            <li><a href="agurskie-vodopady.html">Агурские водопады</a></li>
-            <li><a href="orlinye-skaly.html">Орлиные скалы</a></li>
-            <li><a href="ahun.html">Гора Ахун</a></li>
-            <li><a href="order.html">Купить карту</a></li>
-        </ul>
-    </nav>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карта Сочи с улицами и домами подробно | Купить карту Сочи</title>
+    <meta name="description"
+        content="Бумажные туристические карты Сочи и окрестностей: маршрутные тропы, Адлер, Ахун, Хоста, подробная карта центра города. Купить с доставкой по всей России.">
+    <meta name="keywords" content="карта Сочи, туристические карты, маршруты Сочи, карта Адлера, карта Ахуна">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Карта Сочи с улицами и домами подробно | Купить карту Сочи">
+    <meta property="og:description"
+        content="Туристические бумажные карты Сочи, маршруты для пеших и авто, пляжи, Адлер, Ахун, доставка по России.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sochi-karta.github.io/Sochi-map/">
+    <meta property="og:image" content="https://sochi-karta.github.io/Sochi-map/karta-sochi.png">
 
-    <div class="card">
-        <h2>Купить бумажную карту Сочи</h2>
-
-        <!-- Миниатюра с увеличением по клику -->
-      <a href="#map-large1" title="Увеличить">
-          <img class="product-img" src="karta-sochi.png" alt="Карта Сочи">
-        </a>
-        <a href="#map-large" title="Увеличить">
-          <img class="product-img" src="2026-01-09_03-01-11.png" alt="Образец Карты">
-        </a>
-
-        <ul class="tick-list">
-            <li>Все улицы, номера домов, пляжи и тропы</li>
-            <li>Компактно складывается</li>
-            <li>Удобна для пеших и автомобильных маршрутов</li>
-            <li>Доставка по всей России</li>
-        </ul>
-        <a class="buy-btn" href="order.html">Заказать карту</a>
-    </div>
-<div>
-  Следите за всеми обновлениями, новыми маршрутами и выпусками фрагментов карты Сочи в нашем открытом Telegram-канале:
-  <a href="https://t.me/sochi_turmap" target="_blank">t.me/sochi_turmap</a>.<br>
-  Здесь публикуются свежие новости по картам районов: гора Ахун, Агурские водопады, центральный Сочи, Адлер, пляжи, пригороды и все топовые достопримечательности города.
-</div>
-<div style="margin:12px 0;">
-  <a href="https://t.me/sochi_turmap" target="_blank" style="text-decoration:none; font-size: 1.15em;">
-    <svg width="18" height="18" viewBox="0 0 240 240" style="vertical-align:middle;margin-right:6px;">
-      <circle cx="120" cy="120" r="120" fill="#0088cc"/>
-      <polygon fill="#fff" points="195,60 50,125 95,140 115,190 130,160 170,170 195,60"/>
-    </svg>
-    t.me/sochi_turmap
-  </a>
-  — все новости о Карте Сочи, новых маршрутах и локациях!
-</div>
-    <div class="card">
-        <h2>Другие карты</h2>
-        <b>Центр Сочи</b> — появление в продаже: <b>март – май 2026 г.</b><br>
-        <b>Маршруты горы Ахун, Агурские водопады</b> — готовность: <b>июнь - август 2026 г.</b><br>
-        <a class="order-btn" href="adler.html">Карта Адлера и побережья</a>
-    </div>
-<div style="margin: 20px 0; padding: 15px; border: 1px solid #b55; background: #fff4f4; max-width: 600px;">
-  <p style="font-size: 1.05em; margin: 0; color: #b00;">
-    <strong>Внимание!</strong> Карта защищена авторским правом.<br>
-    Любое копирование или публикация <b>категорически запрещены</b>.
-  </p>
-  <em>Нарушение авторских прав будет преследоваться по закону.</em>
-</div>
-    <div class="card">
-        <h2>Информация и контакты</h2>
-        <p>Уникальные бумажные карты, созданные специально для туристов и гостей города Сочи. Заказывайте напрямую у автора или через «Ozon».</p>
-        <p>По вопросам заказа/доставки пишите: <a href="mailto:sochi-map@yandex.com">sochi-map@yandex.com</a></p>
-        <p>Следите за обновлениями — сайт постоянно дорабатывается и пополняется новыми маршрутами!</p>
-    </div>
-</div>
-
-<!-- Лайтбокс-увеличение картинки по якорю -->
-  <div id="map-large1" class="lightbox-bg">
-    <a href="#" class="close-btn" title="Закрыть">Х</a>
-    <img src="karta-sochi.png" alt="Карта Сочи — крупно">
-</div>
-<div id="map-large" class="lightbox-bg">
-    <a href="#" class="close-btn" title="Закрыть">Х</a>
-    <img src="2026-01-09_03-01-11.png" alt="Образец карты Сочи — крупно">
-</div>
-
-<footer>
-    © 2026 Туристические карты Сочи
-</footer>
-
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function(m,e,t,r,i,k,a){
-        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106185300', 'ym');
-
-    ym(106185300, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "Карта Сочи с улицами и домами",
+  "image": "https://sochi-karta.github.io/Sochi-map/karta-sochi.png",
+  "description": "Бумажная карта Сочи для туристов, маршруты, доставка.",
+  "brand": "BVA",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "RUB",
+    "availability": "https://schema.org/InStock"
+  },
+  "url": "https://sochi-karta.github.io/Sochi-map/"
+}
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/106185300" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+    <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://sochi-karta.github.io/Sochi-map/">
+    <link rel="shortcut icon" href="https://sochi-karta.github.io/Sochi-map/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #f2f5f9;
+            font-family: 'Montserrat', Arial, sans-serif;
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px 24px 24px 24px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+        }
+
+        nav {
+            margin-bottom: 29px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #1976d2;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color .2s;
+        }
+
+        nav a:hover {
+            color: #155fa0;
+            text-decoration: underline;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 2.3rem;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            color: #1976d2;
+            margin-top: 36px;
+        }
+
+        .product-img {
+            width: 280px;
+            max-width: 100%;
+            margin: 24px 0 10px 0;
+            border-radius: 7px;
+            box-shadow: 0 4px 14px rgba(44, 109, 180, 0.09);
+            cursor: zoom-in;
+            transition: box-shadow .2s;
+        }
+
+        .card {
+            background: #f8fafc;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(140, 170, 255, .07);
+            margin-bottom: 20px;
+        }
+
+        .buy-btn,
+        .order-btn {
+            display: inline-block;
+            background: #1976d2;
+            color: #fff;
+            font-weight: bold;
+            padding: 15px 36px;
+            border: none;
+            border-radius: 7px;
+            font-size: 1.1rem;
+            transition: background 0.18s;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        .buy-btn:hover,
+        .order-btn:hover {
+            background: #0d4c92;
+        }
+
+        ul.tick-list {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 0;
+        }
+
+        ul.tick-list li::before {
+            content: "✔";
+            margin-right: 7px;
+            color: #3db44b;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding-top: 34px;
+            text-align: center;
+            color: #616161;
+            font-size: 0.95rem;
+        }
+
+        /* LIGHTBOX для увеличенного просмотра */
+        .lightbox-bg {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.81);
+            text-align: center;
+            overflow: auto;
+        }
+
+        .lightbox-bg:target {
+            display: block;
+        }
+
+        .lightbox-bg img {
+            max-width: 94vw;
+            max-height: 84vh;
+            margin: 40px auto 12px auto;
+            border-radius: 13px;
+            box-shadow: 0 8px 38px rgba(0, 0, 0, 0.16);
+            background: #fff;
+            display: block;
+        }
+
+        .lightbox-bg .close-btn {
+            color: #fff;
+            font-size: 3rem;
+            text-decoration: none;
+            font-weight: bold;
+            position: absolute;
+            top: 24px;
+            right: 40px;
+            background: rgba(0, 0, 0, 0.0);
+            border-radius: 4px;
+            transition: background .22s;
+        }
+
+        .lightbox-bg .close-btn:hover {
+            background: rgba(0, 0, 0, 0.18);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 8px;
+            }
+
+            nav ul {
+                gap: 13px;
+                font-size: .94rem;
+            }
+
+            .card {
+                padding: 10px;
+            }
+
+            .lightbox-bg img {
+                max-width: 99vw;
+                max-height: 74vh;
+            }
+
+            .lightbox-bg .close-btn {
+                font-size: 2.2rem;
+                right: 17px;
+                top: 12px;
+            }
+        }
+
+        .news-block .news-item {
+            border-bottom: 1px solid #eff0f3;
+            padding-bottom: 10px;
+            margin-bottom: 9px;
+        }
+
+        .news-block .news-date {
+            font-size: 1em;
+            color: #1976d2;
+            font-weight: bold;
+        }
+
+        .news-block .news-title {
+            font-size: 1.08em;
+            font-weight: bold;
+            margin: 2px 0 4px 0;
+        }
+
+        .news-block .news-text {
+            margin-bottom: 4px;
+            font-size: 0.99em;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="https://sochi-karta.github.io/Sochi-map/">Главная</a></li>
+                <li><a href="adler.html">Карта Адлера</a></li>
+                <li><a href="agurskie-vodopady.html">Агурские водопады</a></li>
+                <li><a href="orlinye-skaly.html">Орлиные скалы</a></li>
+                <li><a href="ahun.html">Гора Ахун</a></li>
+                <li><a href="order.html">Купить карту</a></li>
+            </ul>
+        </nav>
+
+        <div class="card">
+            <h2>Купить бумажную карту Сочи</h2>
+
+            <!-- Миниатюра с увеличением по клику -->
+            <a href="#map-large1" title="Увеличить">
+                <img class="product-img" src="karta-sochi.png" alt="Карта Сочи">
+            </a>
+            <a href="#map-large" title="Увеличить">
+                <img class="product-img" src="2026-01-09_03-01-11.png" alt="Образец Карты">
+            </a>
+
+            <ul class="tick-list">
+                <li>Все улицы, номера домов, пляжи и тропы</li>
+                <li>Компактно складывается</li>
+                <li>Удобна для пеших и автомобильных маршрутов</li>
+                <li>Доставка по всей России</li>
+            </ul>
+            <a class="buy-btn" href="order.html">Заказать карту</a>
+        </div>
+        <div>
+            Следите за всеми обновлениями, новыми маршрутами и выпусками фрагментов карты Сочи в нашем открытом
+            Telegram-канале:
+            <a href="https://t.me/sochi_turmap" target="_blank">t.me/sochi_turmap</a>.<br>
+            Здесь публикуются свежие новости по картам районов: гора Ахун, Агурские водопады, центральный Сочи, Адлер,
+            пляжи, пригороды и все топовые достопримечательности города.
+        </div>
+        <div style="margin:12px 0;">
+            <a href="https://t.me/sochi_turmap" target="_blank" style="text-decoration:none; font-size: 1.15em;">
+                <svg width="18" height="18" viewBox="0 0 240 240" style="vertical-align:middle;margin-right:6px;">
+                    <circle cx="120" cy="120" r="120" fill="#0088cc" />
+                    <polygon fill="#fff" points="195,60 50,125 95,140 115,190 130,160 170,170 195,60" />
+                </svg>
+                t.me/sochi_turmap
+            </a>
+            — все новости о Карте Сочи, новых маршрутах и локациях!
+        </div>
+        <!-- Блок новостей -->
+        <div class="card news-block" style="margin-top:36px;">
+            <h2>Новости и обновления карт</h2>
+            <div class="news-item">
+                <div class="news-date">09.06.2026</div>
+                <div class="news-title">Обновили карту маршрутов Ахуна</div>
+                <div class="news-text">Добавлены новые тропы к источникам и смотровым площадкам. Исправлены обозначения
+                    пляжей.</div>
+            </div>
+            <div class="news-item">
+                <div class="news-date">02.06.2026</div>
+                <div class="news-title">Новинка! Карта Адлера</div>
+                <div class="news-text">Вышла подробная бумажная карта Адлера с указанием всех улиц и домов.</div>
+            </div>
+        </div>
+
+        <!-- Форма поиска Яндекса -->
+        <div style="margin:22px 0;">
+            <form action="https://yandex.ru/search/" target="_blank" method="get" style="display:flex;gap:6px;">
+                <input type="text" name="text" placeholder="Найти по сайту или в Яндексе…" size="36"
+                    style="padding:7px;border:1px solid #bbb;border-radius:7px;">
+                <input type="hidden" name="site" value="sochi-karta.github.io/Sochi-map/">
+                <button type="submit"
+                    style="background:#eecd07;color:#333;padding:8px 17px;border:none;border-radius:7px;font-weight:bold;">Найти</button>
+            </form>
+            <small style="color:#999;">Поиск осуществляется через Яндекс</small>
+        </div>
+
+        <!-- Яндекс.Карты -->
+        <div style="margin:26px 0;">
+            <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A4dc71f898847cd07c112b07b405f7420abc0340f18c8b593678e68ba9c835a0a&amp;amp;source=constructor"
+                width="100%" height="320" frameborder="0" style="border-radius:13px; border:2px solid #e2eafc;"
+                allowfullscreen></iframe>
+            <small style="color:#999;">Карта маршрутов Яндекса</small>
+        </div>
+
+        <!-- Яндекс.Дзен виджет -->
+        <div style="margin:20px 0;">
+            <iframe src="https://zen.yandex.ru/embed/?publisher_id=5f79622d42fc1c3abcf17d19" width="100%" height="320"
+                frameborder="0" style="border-radius:10px"></iframe>
+            <small style="color:#999;">Новости по маршрутам Сочи в Яндекс.Дзене</small>
+        </div>
+        <div class="card">
+            <h2>Другие карты</h2>
+            <b>Центр Сочи</b> — появление в продаже: <b>март – май 2026 г.</b><br>
+            <b>Маршруты горы Ахун, Агурские водопады</b> — готовность: <b>июнь - август 2026 г.</b><br>
+            <a class="order-btn" href="adler.html">Карта Адлера и побережья</a>
+        </div>
+        <div style="margin: 20px 0; padding: 15px; border: 1px solid #b55; background: #fff4f4; max-width: 600px;">
+            <p style="font-size: 1.05em; margin: 0; color: #b00;">
+                <strong>Внимание!</strong> Карта защищена авторским правом.<br>
+                Любое копирование или публикация <b>категорически запрещены</b>.
+            </p>
+            <em>Нарушение авторских прав будет преследоваться по закону.</em>
+        </div>
+        <div class="card">
+            <h2>Информация и контакты</h2>
+            <p>Уникальные бумажные карты, созданные специально для туристов и гостей города Сочи. Заказывайте напрямую у
+                автора или через «Ozon».</p>
+            <p>По вопросам заказа/доставки пишите: <a href="mailto:sochi-map@yandex.com">sochi-map@yandex.com</a></p>
+            <p>Следите за обновлениями — сайт постоянно дорабатывается и пополняется новыми маршрутами!</p>
+        </div>
+    </div>
+
+    <!-- Лайтбокс-увеличение картинки по якорю -->
+    <div id="map-large1" class="lightbox-bg">
+        <a href="#" class="close-btn" title="Закрыть">Х</a>
+        <img src="karta-sochi.png" alt="Карта Сочи — крупно">
+    </div>
+    <div id="map-large" class="lightbox-bg">
+        <a href="#" class="close-btn" title="Закрыть">Х</a>
+        <img src="2026-01-09_03-01-11.png" alt="Образец карты Сочи — крупно">
+    </div>
+
+    <footer>
+        © 2026 Туристические карты Сочи
+    </footer>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=106185300', 'ym');
+
+        ym(106185300, 'init', { ssr: true, webvisor: true, clickmap: true, ecommerce: "dataLayer", accurateTrackBounce: true, trackLinks: true });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/106185300" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
 
 
 
 </body>
+
 </html>
