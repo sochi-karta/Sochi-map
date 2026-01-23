@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Generated with https://sitemap-xml.ru-->
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd">
-  <url>
-    <loc>https://sochi-karta.github.io/</loc>
-    <priority>1.0</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://sochi-karta.github.io/Sochi-map/</loc>
+    </url>
+    <url>
+        <loc>https://sochi-karta.github.io/Sochi-map/adler.html</loc>
+    </url>
+    <url>
+        <loc>https://sochi-karta.github.io/Sochi-map/agurskie-vodopady.html</loc>
+    </url>
+    <url>
+        <loc>https://sochi-karta.github.io/Sochi-map/orlinye-skaly.html</loc>
+    </url>
+    <url>
+        <loc>https://sochi-karta.github.io/Sochi-map/ahun.html</loc>
+    </url>
+    <url>
+        <loc>https://sochi-karta.github.io/Sochi-map/order.html</loc>
+    </url>
+    <!-- Добавьте все существующие html-страницы -->
 </urlset>
