@@ -24,43 +24,88 @@
   "name": "Карта Сочи с улицами и домами",
   "image": "https://sochi-karta.github.io/Sochi-map/karta-sochi.png",
   "description": "Бумажная карта Сочи для туристов, маршруты, доставка.",
-        "review": [
-  {
-    "@type": "Review",
-    "reviewRating": {
-      "@type": "Rating",
-      "ratingValue": "5",
-      "bestRating": "5"
-    },
-    "author": {
-      "@type": "Person",
-      "name": "Анна"
-    },
-    "reviewBody": "Очень полезная карта! Быстро доставили, всё понравилось."
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "reviewCount": "2"
   },
-  {
-    "@type": "Review",
-    "reviewRating": {
-      "@type": "Rating",
-      "ratingValue": "4",
-      "bestRating": "5"
+  "review": [
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Анна"
+      },
+      "reviewBody": "Очень полезная карта! Быстро доставили, всё понравилось."
     },
-    "author": {
-      "@type": "Person",
-      "name": "Андрей"
-    },
-    "reviewBody": "Удобная и подробная карта, рекомендую для туристов."
-  }
-]
-  "brand": "BVA",
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Андрей"
+      },
+      "reviewBody": "Удобная и подробная карта, рекомендую для туристов."
+    }
+  ],
+  "brand": {
+    "@type": "Brand",
+    "name": "BVA"
+  },
   "offers": {
     "@type": "Offer",
     "priceCurrency": "RUB",
     "price": "790",
     "availability": "https://schema.org/InStock",
-  "url": "https://sochi-karta.github.io/Sochi-map/",
-    "priceValidUntil": "2024-12-31"
+    "url": "https://sochi-karta.github.io/Sochi-map/",
+    "priceValidUntil": "2027-12-31",
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0",
+        "currency": "RUB"
+      },
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "RU",
+        "name": "Россия"
+      },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 1,
+          "maxValue": 2,
+          "unitCode": "d"
+        },
+        "transitTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 3,
+          "maxValue": 7,
+          "unitCode": "d"
+        }
+      }
+    },
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "applicableCountry": "RU",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 14,
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/FreeReturn",
+      "returnShippingFees": "https://schema.org/ReturnShippingFeesCustomerResponsibility"
     }
+  }
 }
 </script>
     <meta name="robots" content="index,follow">
